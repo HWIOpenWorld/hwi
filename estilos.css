@@ -1,3 +1,26 @@
+.logoInd {
+	display: block;
+	margin: auto;
+	height: 87px;
+	width: 100px;
+  }
+
+#menu * { list-style:none;}
+#menu li{ line-height:180%;}
+#menu li a{color:rgb(255, 255, 255); text-decoration:none;}
+#menu li a:before{ content:"\025b8"; color:#ddd; margin-right:4px;}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu .interior{display: none;}
+#menu input:checked ~ ul{display:block;}
+
+ul {
+	margin: 0px 0px 0px -35px;
+    list-style: none;
+}
+
 span{
 	display: block;
 	font-family: Consolas;
@@ -16,4 +39,110 @@ span{
 
 @keyframes blink{
 	50% { border-color: transparent }
+}
+
+.burbuja{
+	border-radius: 50%;
+	background: rgb(146, 146, 146);
+	opacity: .3;
+
+	position: absolute;
+	bottom: -150;
+
+	animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+	width: 10px;
+	height: 10px;
+	left: 10%;
+	animation-duration: 3s;
+	animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+	width: 20px;
+	height: 20px;
+	left: 35%;
+	animation-duration: 3s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+	width: 15px;
+	height: 15px;
+	left: 15%;
+	animation-duration: 1.5s;
+	animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+	width: 13px;
+	height: 13px;
+	left: 70%;
+	animation-duration: 6s;
+	animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+	width: 18px;
+	height: 18px;
+	left: 65%;
+	animation-duration: 3s;
+	animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+	width: 19px;
+	height: 19px;
+	left: 50%;
+	animation-duration: 4s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+	width: 21px;
+	height: 21px;
+	left: 50%;
+	animation-duration: 4s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+	width: 25px;
+	height: 25px;
+	left: 52%;
+	animation-duration: 5s;
+	animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+	width: 11px;
+	height: 11px;
+	left: 51%;
+	animation-duration: 3s;
+	animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+	width: 9px;
+	height: 9px;
+	left: 35%;
+	animation-duration: 3s;
+	animation-delay: 4s;
+}
+
+@keyframes burbujas{
+	0%{
+		bottom: 0;
+		opacity: 0;
+
+	}
+	50%{
+		opacity: .4;
+	}
+	100%{
+		bottom: 100vh;
+		opacity: 0;
+	}
 }
